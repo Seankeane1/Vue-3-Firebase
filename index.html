@@ -1,0 +1,23 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue</title>
+    <script src ="https://unpkg.com/vue@3.0.2"></script>
+</head>
+<body>
+    <h1>Hello Vue</h1>
+
+    <div id="app">
+        <h2>{{title }} - {{author}} - {{age}}</h2>
+
+<button v-on:click="age++">Increase Age</button>
+<button v-on:click="age--">Decrease Age</button>
+    <div @click="changeTitle('Oathbringer')">Change Book title</div>
+    </div>
+
+    <script src ="app.js"></script>
+</body>
+
+</html>
